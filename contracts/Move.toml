@@ -1,0 +1,12 @@
+[package]
+name = "CyberVault"
+version = "0.1.0"
+edition = "2024"
+
+[addresses]
+CyberVault = "0x0"
+MoveStdlib = "0x1"
+Iota = "0x2"
+
+[dependencies]
+Iota = { git = "https://github.com/iotaledger/iota.git", subdir = "crates/iota-framework/packages/iota-framework", rev = "framework/testnet" }
