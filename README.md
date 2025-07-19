@@ -1,5 +1,6 @@
-# CyberVault SDK
+<p align="center"><img src="cybervault-logo.png" width="480"\></p>
 
+## CyberVault SDK
 A full-stack decentralized access control and auditing toolkit for IOTA-based applications. CyberVault SDK enables developers to manage decentralized identities (DIDs), assign roles, enforce access policies, notarize documents, and emit/retrieve on-chain audit events using IOTA Move smart contracts.
 
 ---
@@ -19,7 +20,7 @@ A full-stack decentralized access control and auditing toolkit for IOTA-based ap
 ## 📁 Folder Structure
 
 ```bash
-cybervault-sdk/
+CyberVault/
 ├── abi/                    # ABI JSON files of smart contracts
 ├── contracts/              # Move smart contracts (already deployed)
 ├── scripts/                # Scripts for deployment (Windows .bat)
@@ -50,8 +51,8 @@ cybervault-sdk/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-org>/cybervault-sdk.git
-cd cybervault-sdk
+git clone https://github.com/NeoV55/CyberVault.git
+cd CyberVault
 ```
 
 ### 2. Build the SDK
@@ -64,22 +65,14 @@ cargo build
 
 ## 🚧 Deploy Smart Contracts
 
-Contracts are already written in IOTA Move and stored in `contracts/`.
+Contracts are already written in IOTA Move and stored in `contracts/sources`.
+Configured move.toml already written for all contracts modules in 'contracts/'
 To deploy them to an IOTA testnet:
 
-### 1. Set Your Package ID and Account
-
-In `deploy_all.bat`, update:
-
-```bat
-set PACKAGE_ID=0xf829...001f
-set ACCOUNT=0x010dd...2d66
-```
-
-### 2. Run Batch Script (Windows)
+### 1. Run Batch Deployment Script (Windows)
 
 ```bash
-deploy_all.bat
+deploy_all_CyberV_contracts.bat
 ```
 
 This deploys:
@@ -92,6 +85,14 @@ This deploys:
 - `Policy`
 
 ---
+### 2. Set Your Package ID and Account
+
+In `contracts/source/*.rs`, update:
+
+```bash
+set PACKAGE_ID=0xf829...001f
+```
+
 
 ## 🔹 Using the CLI
 
@@ -158,7 +159,7 @@ wasm-pack build --target web
 
 ## 🤖 Example Usage Script
 
-Create a `test_all.bat` file:
+Run `test_all_commands.bat` file:
 
 ```bat
 @echo off
@@ -200,5 +201,5 @@ MIT License.
 
 ## ⚙️ Maintainer
 
-**CyberVault Team**
-[https://github.com/<your-org>](https://github.com/<your-org>)
+**CyberVault**
+[NeoV55](https://github.com/NeoV55)
