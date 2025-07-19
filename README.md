@@ -19,7 +19,7 @@ A full-stack decentralized access control and auditing toolkit for IOTA-based ap
 ## 📁 Folder Structure
 
 ```bash
-cybervault-sdk/
+IOTA-CyberVault/
 ├── abi/                    # ABI JSON files of smart contracts
 ├── contracts/              # Move smart contracts (already deployed)
 ├── scripts/                # Scripts for deployment (Windows .bat)
@@ -50,8 +50,8 @@ cybervault-sdk/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-org>/cybervault-sdk.git
-cd cybervault-sdk
+git clone https://github.com/NeoV55/IOTA-CyberVault.git
+cd IOTA-CyberVault
 ```
 
 ### 2. Build the SDK
