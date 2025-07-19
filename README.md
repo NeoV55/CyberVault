@@ -71,7 +71,7 @@ To deploy them to an IOTA testnet:
 ### 1. Run Batch Deployment Script (Windows)
 
 ```bash
-deploy_all.bat
+deploy_all_CyberV_contracts.bat
 ```
 
 This deploys:
