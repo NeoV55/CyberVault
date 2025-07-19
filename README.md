@@ -90,7 +90,6 @@ In `contracts/source/*.rs`, update:
 
 ```bash
 set PACKAGE_ID=0xf829...001f
-set ACCOUNT=0x010dd...2d66
 ```
 
 
@@ -159,7 +158,7 @@ wasm-pack build --target web
 
 ## 🤖 Example Usage Script
 
-Create a `test_all.bat` file:
+Run `test_all_commands.bat` file:
 
 ```bat
 @echo off
