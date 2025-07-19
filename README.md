@@ -1,4 +1,4 @@
-# IOTA-CyberVault SDK
+# CyberVault SDK
 
 A full-stack decentralized access control and auditing toolkit for IOTA-based applications. CyberVault SDK enables developers to manage decentralized identities (DIDs), assign roles, enforce access policies, notarize documents, and emit/retrieve on-chain audit events using IOTA Move smart contracts.
 
@@ -19,7 +19,7 @@ A full-stack decentralized access control and auditing toolkit for IOTA-based ap
 ## 📁 Folder Structure
 
 ```bash
-IOTA-CyberVault/
+CyberVault/
 ├── abi/                    # ABI JSON files of smart contracts
 ├── contracts/              # Move smart contracts (already deployed)
 ├── scripts/                # Scripts for deployment (Windows .bat)
@@ -50,8 +50,8 @@ IOTA-CyberVault/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/NeoV55/IOTA-CyberVault.git
-cd IOTA-CyberVault
+git clone https://github.com/NeoV55/CyberVault.git
+cd CyberVault
 ```
 
 ### 2. Build the SDK
@@ -86,7 +86,7 @@ This deploys:
 ---
 ### 2. Set Your Package ID and Account
 
-In `contracts/source/.move`, update:
+In `contracts/source/*.rs`, update:
 
 ```bash
 set PACKAGE_ID=0xf829...001f
