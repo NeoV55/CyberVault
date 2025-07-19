@@ -1,5 +1,6 @@
-# CyberVault SDK
+<p align="center"><img src="cybervault-logo.png" width="480"\></p>
 
+## CyberVault SDK
 A full-stack decentralized access control and auditing toolkit for IOTA-based applications. CyberVault SDK enables developers to manage decentralized identities (DIDs), assign roles, enforce access policies, notarize documents, and emit/retrieve on-chain audit events using IOTA Move smart contracts.
 
 ---
